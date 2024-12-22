@@ -64,6 +64,12 @@
         <item>one</item>
     </string-array>
     <string-array name="sound_names" translatable="false">
+      <item>@string/setting.sound_name_al1</item>
+      <item>@string/setting.sound_name_al2</item>
+      <item>@string/setting.sound_name_al3</item>
+      <item>@string/setting.sound_name_al4</item>
+      <item>@string/setting.sound_name_al5</item>
+      <item>@string/setting.sound_name_al6</item>    
       <item>@string/setting.sound_name_no_sound</item>
       <item>@string/setting.sound_name_bell_3</item>
       <item>@string/setting.sound_name_bell_2</item>
@@ -80,16 +86,21 @@
       <item>@string/setting.sound_name_bowl2</item>
       <item>@string/setting.sound_name_birds</item>
       <item>@string/setting.sound_name_system_tone</item>
-      <item>@string/setting.sound_name_sound_file</item>
+      <item>@string/setting.sound_name_sound_file</item>                              
     </string-array>
     <!--suppress CheckTagEmptyBody -->
     <string-array name="sound_uris">
-        <item></item>
         <!--
              For consistent naming, we should use 'bell_3' instead of
              'bell'. The reason why we didn't do this is for backward
              compatibility,
         -->
+        <item>android.resource://org.yuttadhammo.BodhiTimer/raw/al1</item>
+        <item>android.resource://org.yuttadhammo.BodhiTimer/raw/al2</item>
+        <item>android.resource://org.yuttadhammo.BodhiTimer/raw/al3</item>
+        <item>android.resource://org.yuttadhammo.BodhiTimer/raw/al4</item>
+        <item>android.resource://org.yuttadhammo.BodhiTimer/raw/al5</item>
+        <item>android.resource://org.yuttadhammo.BodhiTimer/raw/al6</item>          
         <item>android.resource://org.yuttadhammo.BodhiTimer/raw/bell</item>
         <item>android.resource://org.yuttadhammo.BodhiTimer/raw/bell_2</item>
         <item>android.resource://org.yuttadhammo.BodhiTimer/raw/bell_1</item>
@@ -111,7 +122,7 @@
         <item>android.resource://org.yuttadhammo.BodhiTimer/raw/birds</item>
         <item>system</item>
         <item>file</item>
-        <item>tts</item>
+        <item>tts</item>                                      
     </string-array>
     <!-- Reply Preference -->
 

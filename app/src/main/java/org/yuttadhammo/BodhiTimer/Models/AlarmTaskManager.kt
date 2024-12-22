@@ -48,11 +48,12 @@ class AlarmTaskManager(private val mApp: Application) : AndroidViewModel(mApp) {
     // Live Data
     private val currentTimerLeft = MutableLiveData(-1)
     private val currentTimerDuration = MutableLiveData(-1)
-    private val mIndex = MutableLiveData<Int>()
+    private val mIndex = MutableLiveData<Int>(0)
     private val timerText = MutableLiveData<String>()
     private val previewText = MutableLiveData<String>()
     private val mCurrentState = MutableLiveData(-1)
     private var lastTextGenerated = 0
+
 
     // Accessors
     val curTimerLeft: LiveData<Int>
@@ -66,6 +67,9 @@ class AlarmTaskManager(private val mApp: Application) : AndroidViewModel(mApp) {
         get() = currentTimerLeft.value!!
     val curTimerDurationVal: Int
         get() = currentTimerDuration.value!!
+        
+    val getIndex: Int
+        get() = mIndex.value!!
 
     private var previousInterruptionFilter: Int = 0
 
@@ -433,7 +437,7 @@ class AlarmTaskManager(private val mApp: Application) : AndroidViewModel(mApp) {
                 arr.add("...")
                 break
             }
-            arr.add(Time.time2hms(previewTimes[i]))
+            arr.add((i+2+getIndex).toString() + ": " +Time.time2hms(previewTimes[i]))
         }
         return arr
     }
@@ -462,6 +466,8 @@ class AlarmTaskManager(private val mApp: Application) : AndroidViewModel(mApp) {
 
         // Remove alarm
         alarms.remove(alarm)
+        val index = getIndex
+        setIndex(index+1)
 
         // Update labels
         if (alarms.empty()) {

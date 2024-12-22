@@ -68,6 +68,13 @@
     <string name="settings.theme_black">Black</string>
     <string name="settings.theme_title">Color theme</string>
 
+
+    <string name="setting.sound_name_al1">Al1</string>
+    <string name="setting.sound_name_al2">Al2</string>
+    <string name="setting.sound_name_al3">Al3</string>
+    <string name="setting.sound_name_al4">Al4</string>
+    <string name="setting.sound_name_al5">Al5</string>
+    <string name="setting.sound_name_al6">Al6</string> 
     <string name="setting.sound_name_no_sound">No Sound</string>
     <string name="setting.sound_name_bell_3">Bell 1 (3 times)</string>
     <string name="setting.sound_name_bell_2">Bell 1 (2 times)</string>
@@ -85,7 +92,8 @@
     <string name="setting.sound_name_birds">Bird Song 1</string>
     <string name="setting.sound_name_system_tone">System Tone</string>
     <string name="setting.sound_name_sound_file">Sound File</string>
-
+          
+    
     <string name="stay_awake">Stay Awake</string>
     <string name="stay_awake_desc">Don\'t allow the phone to go to sleep.</string>
     <string name="switch_time">Switch Time Input Mode</string>
